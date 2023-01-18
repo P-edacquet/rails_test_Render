@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: rails_test_Render_production
   username: rails_test_Render
   password: <%= ENV["RAILS_TEST_RENDER_DATABASE_PASSWORD"] %>
